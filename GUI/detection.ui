@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>748</width>
+    <height>687</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="camera_combobox">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>580</y>
+      <width>191</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="update_cameras_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Update Cameras</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="weights_label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>630</y>
+      <width>241</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:		#585858;
+font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Here will be weights...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="choose_weights_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Choose weights</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_btn">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>580</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_btn">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>630</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stream_label">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>480</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Choose weights, camera and press Start button</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit_btn">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>630</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;Times New Roman&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
