@@ -96,12 +96,12 @@ class FrameDetection:
         """
         class_ids, confidences, boxes = FrameDetection.__wrap_detection(frame, outs[0])
 
-        for (classid, confidence, box) in zip(class_ids, confidences, boxes):
-            if classid > 0:
+        for (class_id, confidence, box) in zip(class_ids, confidences, boxes):
+            if class_id > 0:
                 return None
-            color = Config.colors[int(classid) % len(Config.colors)]
+            color = Config.colors[int(class_id) % len(Config.colors)]
             cv2.rectangle(frame, box, color, 2)
             cv2.rectangle(frame, (box[0], box[1] - 20), (box[0] + box[2], box[1]), color, -1)
-            cv2.putText(frame, Config.class_list[classid] + '  ' + str(math.floor(confidence * 100)) + '%',
+            cv2.putText(frame, Config.class_list[class_id] + '  ' + str(math.floor(confidence * 100)) + '%',
                         (box[0], box[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, .5, (0, 0, 0), thickness=2)
         return frame

@@ -20,7 +20,7 @@ class Detection(QThread):
         self.error_msg.setWindowTitle('Warning')
         self.error_msg.setText('Incompatible weights and classes list')
 
-    def setParams(self, net, camera_index):
+    def set_params(self, net, camera_index):
         """
         Обновление параметров детекции.
 
